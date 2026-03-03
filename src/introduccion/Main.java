@@ -63,4 +63,14 @@ public class Main {
         // Cerramos el scanner al terminar el programa
         scanner.close();
     }
+
+    // Método que muestra el menú del sistema
+    // Se separó para que el código sea más ordenado
+    public static void mostrarMenu() {
+        System.out.println("\n1. Agregar estudiante");
+        System.out.println("2. Mostrar lista de estudiantes");
+        System.out.println("3. Calcular promedio");
+        System.out.println("4. Mostrar estudiante con mayor calificación");
+        System.out.println("5. Salir");
+    }
 }
