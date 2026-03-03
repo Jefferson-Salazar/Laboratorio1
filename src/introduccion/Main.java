@@ -73,4 +73,21 @@ public class Main {
         System.out.println("4. Mostrar estudiante con mayor calificación");
         System.out.println("5. Salir");
     }
+
+    // Método para agregar un estudiante y su nota
+    // Se pasa el scanner como parámetro para poder leer datos
+    public static void agregarEstudiante(Scanner scanner) {
+
+        System.out.print("Ingrese el nombre del estudiante: ");
+        String nombre = scanner.nextLine();
+
+        System.out.print("Ingrese la calificación del estudiante: ");
+        double nota = Double.parseDouble(scanner.nextLine());
+
+        // Guardamos en las listas
+        estudiantes.add(nombre);
+        calificaciones.add(nota);
+
+        System.out.println("Estudiante agregado correctamente.");
+    }
 }
