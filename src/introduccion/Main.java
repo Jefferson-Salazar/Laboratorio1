@@ -39,24 +39,24 @@ public class Main {
 
             // Estructura de switch
             switch (opcion) {
-                case 1:
-                    System.out.println("Opción agregar estudiante (aún no implementada).");
-                    break;
-                case 2:
-                    System.out.println("Opción mostrar estudiantes (aún no implementada).");
-                    break;
-                case 3:
-                    System.out.println("Opción calcular promedio (aún no implementada).");
-                    break;
-                case 4:
-                    System.out.println("Opción mayor calificación (aún no implementada).");
-                    break;
-                case 5:
-                    System.out.println("Saliendo del sistema...");
-                    break;
-                default:
-                    System.out.println("Opción no válida.");
-            }
+            case 1:
+                agregarEstudiante(scanner);
+                break;
+            case 2:
+                mostrarEstudiantes();
+                break;
+            case 3:
+                calcularPromedio();
+                break;
+            case 4:
+                mostrarMayorCalificacion();
+                break;
+            case 5:
+                System.out.println("Saliendo del sistema...");
+                break;
+            default:
+                System.out.println("Opción no válida.");
+        }
 
         } while (opcion != 5);
 
