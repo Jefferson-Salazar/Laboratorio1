@@ -126,3 +126,28 @@ public class Main {
 
         System.out.println("El promedio es: " + promedio);
     }
+    
+ // Busca y muestra el estudiante con la nota más alta
+    public static void mostrarMayorCalificacion() {
+
+        if (calificaciones.isEmpty()) {
+            System.out.println("No hay calificaciones registradas.");
+            return;
+        }
+
+        // Se toma el primero como referencia
+        double max = calificaciones.get(0);
+        String estudianteMax = estudiantes.get(0);
+
+        // Se comparan las demás notas
+        for (int i = 1; i < calificaciones.size(); i++) {
+            if (calificaciones.get(i) > max) {
+                max = calificaciones.get(i);
+                estudianteMax = estudiantes.get(i);
+            }
+        }
+
+        System.out.println("El estudiante con mayor calificación es: "
+                + estudianteMax + " con " + max);
+    }
+}
