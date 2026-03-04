@@ -1,4 +1,13 @@
-# Laboratorio 1
+# Universidad Mariano Gálvez de Guatemala
+
+## Facultad de Ingeniería en Sistemas
+Curso: Programación I  
+Laboratorio 1  
+
+### Estudiantes
+- Jefferson Osberto Salazar Escobar  
+- Yesmy Darlery Escobar Escobar  
+
 
 ## Análisis del Programa Original
 
