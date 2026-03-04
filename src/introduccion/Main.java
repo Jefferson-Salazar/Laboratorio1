@@ -97,6 +97,7 @@ public class Main {
         if (estudiantes.isEmpty()) {
             System.out.println("No hay estudiantes registrados.");
             return;
+    }
             System.out.println("\nLista de estudiantes:");
 
          // Se recorren ambas listas usando el mismo índice
@@ -105,3 +106,23 @@ public class Main {
                     " - Calificación: " + calificaciones.get(i));
      }
 }
+    
+ // Calcula el promedio general de las notas
+    public static void calcularPromedio() {
+
+        if (calificaciones.isEmpty()) {
+            System.out.println("No hay calificaciones registradas.");
+            return;
+        }
+
+        double suma = 0;
+
+        // Se suman todas las notas
+        for (double nota : calificaciones) {
+            suma += nota;
+        }
+        
+        double promedio = suma / calificaciones.size();
+
+        System.out.println("El promedio es: " + promedio);
+    }
