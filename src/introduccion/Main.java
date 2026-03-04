@@ -90,4 +90,18 @@ public class Main {
 
         System.out.println("Estudiante agregado correctamente.");
     }
+    
+    // Muestra todos los estudiantes con su calificación
+    public static void mostrarEstudiantes() {
+
+        if (estudiantes.isEmpty()) {
+            System.out.println("No hay estudiantes registrados.");
+            return;
+            System.out.println("\nLista de estudiantes:");
+
+         // Se recorren ambas listas usando el mismo índice
+         for (int i = 0; i < estudiantes.size(); i++) {
+             System.out.println(estudiantes.get(i) +
+                    " - Calificación: " + calificaciones.get(i));
+     }
 }
